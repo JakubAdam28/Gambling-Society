@@ -1,0 +1,328 @@
+body {
+    background-color: rgb(31, 31, 31);
+ 
+ }
+ 
+ article {
+    color: white;
+    font-size: 60px;
+    padding: 20px 50px 10px;
+    font-family: "Freeman";
+    width: 80%;
+ }
+ 
+ h1 {
+    font-size: 80px;
+ }
+ 
+ h3 {
+    font-size: 30px;
+ }
+ 
+ h2 {
+    font-family: "Freeman";
+    font-size: 50px;
+ 
+ }
+ 
+ .nav-link {
+    font-family: "Freeman";
+    font-size: 20px;
+ }
+ 
+ button {
+    justify-content: center;
+ 
+ }
+ 
+ .karty {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ 
+ .card-img {
+    width: 30%;
+ }
+ 
+ #slider {
+    margin: 0 auto;
+    width: 800px;
+    max-width: 100%;
+    text-align: center;
+ }
+ 
+ #slider input[type=radio] {
+    display: none;
+ }
+ 
+ #slider label {
+    cursor: pointer;
+    text-decoration: none;
+ }
+ 
+ #slides {
+    padding: 10px;
+    background: #ffffff;
+    position: relative;
+    z-index: 1;
+ }
+ 
+ #overflow {
+    width: 100%;
+    overflow: hidden;
+ }
+ 
+ #slide1:checked~#slides .inner {
+    margin-left: 0;
+ }
+ 
+ #slide2:checked~#slides .inner {
+    margin-left: -100%;
+ }
+ 
+ #slide3:checked~#slides .inner {
+    margin-left: -200%;
+ }
+ 
+ #slide4:checked~#slides .inner {
+    margin-left: -300%;
+ }
+ 
+ #slides .inner {
+    transition: 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 300px;
+ }
+ 
+ #slides .slide {
+    width: 25%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #d8d8d8;
+ }
+ 
+ #slides .slide_1 {
+    background-image: url(pokrkarty.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ 
+ }
+ 
+ #slides .slide_1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+    z-index: 1;
+ }
+ 
+ #slides .slide_1:hover::before {
+    background: rgba(0, 0, 0, 0.2);
+ }
+ 
+ #slides .slide_2 {
+    background-image: url(dealer.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+ 
+ #slides .slide_3 {
+    background-image: url(ruleta.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+ 
+ #slides .slide_4 {
+    background-image: url(sporty.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+ 
+ #controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+ }
+ 
+ #controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+ }
+ 
+ #controls label:hover {
+    opacity: 1;
+ }
+ 
+ #slide1:checked~#controls label:nth-child(2),
+ #slide2:checked~#controls label:nth-child(3),
+ #slide3:checked~#controls label:nth-child(4),
+ #slide4:checked~#controls label:nth-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+    float: right;
+    margin: 0 -50px 0 0;
+    display: block;
+ }
+ 
+ #slide1:checked~#controls label:nth-last-child(2),
+ #slide2:checked~#controls label:nth-last-child(3),
+ #slide3:checked~#controls label:nth-last-child(4),
+ #slide4:checked~#controls label:nth-last-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+    float: left;
+    margin: 0 0 0 -50px;
+    display: block;
+ }
+ 
+ #bullets {
+    margin: 150px 0 0;
+    text-align: center;
+ }
+ 
+ #bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #b4b4b4;
+    margin: 0 10px;
+ }
+ 
+ #slide1:checked~#bullets label:nth-child(1),
+ #slide2:checked~#bullets label:nth-child(2),
+ #slide3:checked~#bullets label:nth-child(3),
+ #slide4:checked~#bullets label:nth-child(4) {
+    background: #444;
+ }
+ 
+ @media screen and (max-width: 900px) {
+ 
+    #slide1:checked~#controls label:nth-child(2),
+    #slide2:checked~#controls label:nth-child(3),
+    #slide3:checked~#controls label:nth-child(4),
+    #slide4:checked~#controls label:nth-child(1),
+    #slide1:checked~#controls label:nth-last-child(2),
+    #slide2:checked~#controls label:nth-last-child(3),
+    #slide3:checked~#controls label:nth-last-child(4),
+    #slide4:checked~#controls label:nth-last-child(1) {
+       margin: 0;
+    }
+ 
+    #slides {
+       max-width: calc(100% - 140px);
+       margin: 0 auto;
+    }
+ }
+ 
+ h1 {
+    text-decoration: none;
+    color: white;
+    font-family: "Freeman";
+    font-size: 80px;
+ }
+ 
+ h4 {
+    text-decoration: none;
+    color: white;
+    font-family: "Freeman";
+    text-align: center;
+    font-size: 40px;
+    padding-top: -30px;
+ }
+ 
+ h5 {
+    font-size: 20px;
+ }
+ 
+ html {
+    scroll-behavior: smooth;
+ }
+ 
+ a h1 {
+    text-decoration: none;
+ }
+ 
+ .slide-content {
+    text-decoration: none;
+ }
+ 
+ .card {
+    width: 50%;
+ }
+ 
+ a {
+    color: white;
+ }
+ 
+ .nav-link {
+    text-decoration: none;
+    color: black;
+ }
+ 
+ .nav-link:hover {
+    text-decoration: none;
+    color: rgb(58, 57, 57);
+ }
+ 
+ h3 {
+    text-decoration: none;
+    color: white;
+    font-family: "Freeman";
+    font-size: 30px;
+ }
+ 
+ .prvni {
+    position: absolute;
+    left: 59%;
+    top: 110px
+ }
+ 
+ .druhy {
+    position: absolute;
+    left: 59%;
+    top: 550px
+ }
+ .treti{
+    position: absolute;
+    left: 2%;
+    top: 950px
+ }
+ 
+ @media all and (max-width: 1024px) and (min-width: 160px) {
+    .prvni {
+       height: 300px;
+       width: 300px;
+       left: 54%;
+       top: 250px;}
+    .druhy{
+       height: 300px;
+       width: 300px;
+       left: 54%;
+       top: 630px}
+       .treti{
+        height: 300px;
+        width: 300px;
+        left: 54%;
+        top: 1110px
+     }
+    }
+    
+
+ 
