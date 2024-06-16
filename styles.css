@@ -309,22 +309,65 @@ h3 {
 .btn{
   margin-right: 10px;
 }
-@media all and (max-width: 1024px) and (min-width: 160px) {
+@media all and (max-width: 960px) and (min-width: 360px) {
    .prvni {
-      height: 300px;
-      width: 300px;
+      height: 200px;
+      width: 350px;
       left: 54%;
-      top: 240px;}
-   .druhy{
-      height: 300px;
-      width: 300px;
-      left: 54%;
-      top: 730px}
-      .treti{
-       height: 300px;
-       width: 300px;
-       left: 54%;
-       top: 1340px
-    }
+      top: 240px;
+      display: none;
    }
-   
+   .druhy{
+      height: 200px;
+      width: 350px;
+      left: 54%;
+      top: 730px;
+      display: none;}
+      .treti{
+       height: 200px;
+       width: 350px;
+       left: 54%;
+       top: 1340px;
+       display: none;
+   }
+   h1{
+      font-size: 40px;
+   }
+   h2{
+      font-size: 30px;
+   }
+p{
+font-size: 10px;
+}
+h6{
+   font-size: 12px;
+}
+img{
+size-adjust: 200px 100px;
+
+}
+.card-group{
+   display: inline-block;
+
+}
+.card{
+   width: 32%;
+}
+.card-title{
+   font-size: 20px;
+}
+header{
+   font-size: 20px;
+}
+article{
+   width: 100%;
+
+}
+.karty{
+   width: 50%;
+   height: 30%;
+}
+.card{
+   width: 32%;
+}
+}
