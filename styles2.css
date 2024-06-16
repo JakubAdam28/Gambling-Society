@@ -291,7 +291,7 @@ body {
  .prvni {
     position: absolute;
     left: 59%;
-    top: 110px
+    top: 154px;
  }
  
  .druhy {
@@ -301,28 +301,66 @@ body {
  }
  .treti{
     position: absolute;
-    left: 2%;
+    left: 59%;
     top: 950px
  }
- 
- @media all and (max-width: 1024px) and (min-width: 160px) {
-    .prvni {
-       height: 300px;
-       width: 300px;
-       left: 54%;
-       top: 250px;}
-    .druhy{
-       height: 300px;
-       width: 300px;
-       left: 54%;
-       top: 630px}
-       .treti{
-        height: 300px;
-        width: 300px;
-        left: 54%;
-        top: 1110px
-     }
-    }
-    
+ .img{
+   position: absolute;
+   margin-left: 59% ;
+width: 0px;
+height: 0px;
+}
+   @media all and (max-width: 960px) and (min-width: 360px) {
+      .prvni {
+         height: 200px;
+         width: 350px;
+         left: 54%;
+         top: 240px;
+         display: none;}
+      .druhy{
+         height: 230px;
+         width: 350px;
+         left: 100%;
+         top: 73%;
+      }
+         .treti{
+          height: 200px;
+          width: 350px;
+          left: 54%;
+          top: 1340px;
+          display: none;
+       
+      }
+      h1{
+         font-size: 40px;
+      }
+      h2{
+         font-size: 30px;
+      }
+   p{
+   font-size: 10px;
+   }
+   h6{
+      font-size: 12px;
+   }
+   
+   .card-group{
+      display: inline-block;
+   }
+   header{
+      font-size: 20px;
+   }
+   .card-title{
+      font-size: 20px;
+   }
+   .card{
+      width: 100%;
+   }
+   .img{
+      height: 230px;
+      width: 350px;
+      padding-top: 30px;
+      margin-left: 14%;
+   }
 
- 
+   }
